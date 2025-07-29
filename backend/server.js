@@ -65,7 +65,7 @@ app.post('/api/login', async (req, res) => {
   }
 });
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, async () => {
   await initializeUsersFile();
   console.log(`Server running on http://localhost:${PORT}`);
