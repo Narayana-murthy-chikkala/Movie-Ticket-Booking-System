@@ -4,7 +4,7 @@ const cors = require('cors');
 const path = require('path');
 
 const app = express();
-app.use(cors({ origin: 'https://movie-ticket-booking-frontend-wheat.vercel.app' }));
+app.use(cors({ origin: 'https://movie-ticket-booking-frontend-9j7a8cteh.vercel.app' }));
 app.use(express.json());
 
 const USERS_FILE = path.join(__dirname, 'users.json');
